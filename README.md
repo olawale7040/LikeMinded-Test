@@ -1,12 +1,10 @@
-#Movie Search
+#RegistrationPage
 
 ## Tech/Framework And Tools used
 
 - [React](https://reactjs.org/)
 
 - [JavaScript](https://www.javascript.com/)
-
-- [Redux Toolkit](https://redux-toolkit.js.org/)
 
 ## Featured performance objectives
 
