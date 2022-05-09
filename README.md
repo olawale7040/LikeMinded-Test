@@ -46,9 +46,10 @@ To get started with the unit testing
 ├── src
 │   ├── assets
 │   ├── components
+│   ├── constants
 │   ├── routes
-│   ├── slices
-│   └── pages
+│   ├── pages
+│   └── test
 │
 
 ```
