@@ -5,17 +5,16 @@ import eyeClose from "src/assets/img/eye_close.svg";
 const FormComponent = ({ formik }) => {
   const [ispwdVisible, setIsPwdVisible] = useState(false);
   return (
-    <div className="textbox-wrapper" data-testid="textbox-wrapper">
-      <form onSubmit={formik.handleSubmit}>
+    <div className="textbox-wrapper" data-testid="form-wrapper">
+      <form onSubmit={formik.handleSubmit} data-testid="form">
         <div className="form-group">
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             className="form-control"
             placeholder="Email"
             name="email"
             id="email"
-            autocomplete="off"
             data-testid="email"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -28,7 +27,7 @@ const FormComponent = ({ formik }) => {
           </div>
         </div>
         <div className="form-group">
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <div className="password-field">
             <input
               className="form-control"
@@ -52,11 +51,12 @@ const FormComponent = ({ formik }) => {
           </div>
         </div>
         <div className="form-group">
-          <label for="userRole">User Role</label>
+          <label htmlFor="userRole">User Role</label>
           <select
             name="userRole"
             id="userRole"
             className="select-cont"
+            data-testid="userRole"
             value={formik.values.userRole}
             onChange={formik.handleChange}
           >
@@ -74,7 +74,7 @@ const FormComponent = ({ formik }) => {
           </div>
         </div>
         <div className="btn-container">
-          <button className="btn-primary" type="submit">
+          <button className="btn-primary" data-testid="submitBtn" type="submit">
             Create account
           </button>
         </div>
